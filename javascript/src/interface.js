@@ -110,7 +110,7 @@ document.getElementById("stylechange").addEventListener("click", function(event)
   document.querySelector("link").setAttribute("id", `${newStyle}`)
 });
 
-document.getElementById("clearallnotes"),addEventListener("click", function(event){
+document.getElementById("clearallnotes").addEventListener("click", function(event){
   window.localStorage.clear();
   document.getElementById("list").innerHTML = ""
 })

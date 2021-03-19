@@ -4,32 +4,58 @@
 
       <script defer src="src/note.js"> </script>
       <script defer src="src/interface.js"> </script>
-      <script defer src="spec/testFramework.js"></script>
-      <script defer src="spec/featureTest.js"></script>
-      
+      <script defer src="spec/testFramework.js"> </script>
+      <script defer src="spec/featureTest.js"> </script>
       <title>| Notes App |</title>
   </head>
 
   <body>
+    <div id="page-body">
     <div id="note-list">
-      <div>
-        <h1>Note text:</h1>
-        <textarea id="note-text" cols="50" rows="10" placeholder="Type here..."></textarea>
+        <div class="heading">
+        <h1>ADD A NOTE</h1>
+        </div>
+        <div class="display">
+        <span class="main">
+          <span id="adding-note">
+        <textarea id="note-text" cols="65" rows="10" placeholder="Type here..."></textarea>
         <br>
         <br>
-        <button type="button" id="addNote">Add Note</button>
-      </div>
-      <div>
+        <button type="button" id="addNote">Add Note</button></span>
+        <br>
+       <br> <span id="listing-the-notes">
         <ul id="list">
 
         </ul>
-      </div>
-    </div>
+        </span></span>
+      </span>
+        </div>
+        <div id="copyright-and-styles">
+          <span id="copyright"></span>
+          <span id="change-styles"><button id="clearallnotes">Clear all notes</button> <button id="stylechange">New comic</button></span>
+        </div>
+      </div>  
     <div id="note-display">
-      <p id="body"></p>
+      <div class="heading">
+        <h1 id="note-heading"></h1>
+        </div>
+        <div class="display">
+      <span class ="main"> <span id ="note-body"></span>
+      <span id="back-button">
       <br>
       <button id="hideNote">Back to Notes</button>
+      </span>
+      </span><br>
     </div>
+    <div id="copyright-and-styles">
+      <span id="copyright"></span>
+      <span id="change-styles"><button id="clearallnotes">Clear all notes</button> <button id="stylechange">New comic</button></span>
+    </div>
+  </div>
+
+</div>
+</div>
+
   </body>
 
 </html>
