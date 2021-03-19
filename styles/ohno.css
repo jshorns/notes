@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Indie Flower', cursive;
+}
+
+body {
+  background-color: #edf5ff
+  align-items: center;
+}
+
+button{
+  background-color:#c0d9f9;
+  border: 2px solid black;
+}
+
+button:hover{
+  background-color:#f6757b;
+  color:white; 
+  border: 2px solid white;
+}
+
+#note-display {
+  display: none;
+  width: 984;
+  height: 486;
+  margin: auto;
+}
+#note-list {
+  width: 984;
+  height: 486;
+  margin: auto;
+}
+.main{
+  float: left;
+  position: absolute;
+  height: 486;
+  width: 472; 
+  max-height:100%;
+  padding: 20px;
+}
+
+#note-body{
+  display: inline-block;
+  height: 80%;
+  width: 100%;
+  max-height: 80%;
+  overflow-y:auto; 
+  background-color: rgba(216, 222, 247, 0.87);
+  padding: 10px;
+  border: 2px solid black;
+}
+#listing-the-notes{
+  display: inline-block;
+  max-height: 30%;
+  overflow-y:auto; 
+  width: 100%;
+  background-color: rgba(216, 222, 247, 0.87);
+  border: 2px solid black;
+}
+
+#note-text{
+  background-color:rgba(216, 222, 247, 0.87);
+  border: 2px solid #161511;
+  resize: none;
+}
+
+.display{
+  background-image: url("images/ohno.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid #161511;
+  padding: 20px;
+  height: 486;
+}
+  
+
+#page-body {
+  padding: 20px;
+}
+
+h1{
+  text-shadow: 0 0 3px #161511;
+  color: #161511;
+  font-size: 30pt;
+  font-weight: bold;
+  font-family: 'Caveat', cursive;
+}
+a:link{
+  font-family: 'Caveat', cursive;
+  text-decoration: none;
+  color: black;
+}
+a:visited{
+  font-family: 'Caveat', cursive;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: #f6757b;
+  text-shadow: 0 0 3px #f6757b;
+}
+
+#back-button{
+  padding: 10px;
+}
+
+ul{
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+li::before{
+  content: "💖 ";
+}
+
+#copyright-and-styles{
+    padding: 10px;  
+}
+
+#copyright{
+    display: inline-block;
+}
+
+#stylechange{
+    float: right;
+}
+
+#copyright::after{
+    content: "Comic copyright Alex Norris";
+}

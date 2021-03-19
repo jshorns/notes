@@ -8,7 +8,7 @@ if (window.localStorage.getItem('listOfNotes') !== null) {
 
 let noteList = document.getElementById("note-list")
 let noteDisplay = document.getElementById("note-display");
-let noteBody = document.getElementById("body");
+let noteBody = document.getElementById("note-body");
 
 array.forEach( note => {
     let newNote = new Note(note._text)

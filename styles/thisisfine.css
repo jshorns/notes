@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Indie Flower', cursive;
+}
+
+body {
+  background-color: #fad03f;
+  align-items: center;
+  
+}
+button{
+  background-color:#f8e786;
+  border: 2px solid #161511;
+}
+
+button:hover{
+  background-color:#ec6e00;
+  color:white; 
+  border: 2px solid white;
+}
+
+#note-display {
+  display: none;
+  width: 984;
+  height: 486;
+  margin: auto;
+}
+#note-list {
+  width: 984;
+  height: 486;
+  margin: auto;
+}
+.main{
+  float: left;
+  position: absolute;
+  height: 486;
+  width: 472; 
+  max-height:100%;
+  padding: 20px;
+}
+
+#note-body{
+  display: inline-block;
+  height: 80%;
+  width: 100%;
+  max-height: 80%;
+  overflow-y:auto; 
+  background-color: rgba(249, 233, 194, 0.9);
+  padding: 10px;
+  border: 2px solid #161511;
+}
+#listing-the-notes{
+  display: inline-block;
+  max-height: 30%;
+  overflow-y:auto; 
+  width: 100%;
+  background-color: rgba(249, 233, 194, 0.9);
+  border: 2px solid #161511;
+}
+
+#note-text{
+  background-color:rgba(249, 233, 194, 0.9);
+  border: 2px solid #161511;
+  resize: none;
+}
+
+.display{
+  background-image: url("images/thisisfine.jpg");
+  background-repeat: no-repeat;
+  border: 2px solid #161511;
+  padding: 20px;
+  height: 486;
+}
+
+
+#page-body {
+  padding: 20px;
+}
+
+h1{
+  text-shadow: 0 0 3px #161511;
+  color: #161511;
+  font-size: 30pt;
+  font-weight: bold;
+  font-family: 'Caveat', cursive;
+}
+a:link{
+  font-family: 'Caveat', cursive;
+  text-decoration: none;
+  color: black;
+}
+a:visited{
+  font-family: 'Caveat', cursive;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: #ec6e00;
+  text-shadow: 0 0 3px #ec6e00;
+}
+
+#back-button{
+  padding: 10px;
+}
+
+ul{
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+li::before{
+  content: "🔥 ";
+}
+
+#copyright-and-styles{
+  padding: 10px;  
+}
+
+#copyright{
+  display: inline-block;
+}
+
+#stylechange{
+  float: right;
+}
+
+#copyright::after{
+  content: "Comic copyright KC Green";
+}
