@@ -5,17 +5,17 @@
 }
 
 body {
-  background-color: #edf5ff;
+  background-color: #f2f2f2 ;
   align-items: center;
 }
 
 button{
-  background-color:#c0d9f9;
+  background-color:#cdfad9;
   border: 2px solid black;
 }
 
 button:hover{
-  background-color:#f6757b;
+  background-color:#4cad67;
   color:white; 
   border: 2px solid white;
 }
@@ -46,7 +46,7 @@ button:hover{
   width: 100%;
   max-height: 80%;
   overflow-y:auto; 
-  background-color: rgba(216, 222, 247, 0.87);
+  background-color: rgba(212, 241, 212, 0.86);
   padding: 10px;
   border: 2px solid black;
 }
@@ -55,18 +55,18 @@ button:hover{
   max-height: 30%;
   overflow-y:auto; 
   width: 100%;
-  background-color: rgba(216, 222, 247, 0.87);
+  background-color: rgba(212, 241, 212, 0.86);
   border: 2px solid black;
 }
 
 #note-text{
-  background-color:rgba(216, 222, 247, 0.87);
+  background-color:rgba(212, 241, 212, 0.86);
   border: 2px solid #161511;
   resize: none;
 }
 
 .display{
-  background-image: url("images/ohno.jpg");
+  background-image: url("images/mfbreadcrumbs.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border: 2px solid #161511;
@@ -98,8 +98,8 @@ a:visited{
 }
 
 a:hover{
-  color: #f6757b;
-  text-shadow: 0 0 3px #f6757b;
+  color: #4cad67;
+  text-shadow: 0 0 3px #4cad67;
 }
 
 #back-button{
@@ -112,7 +112,7 @@ ul{
 }
 
 li::before{
-  content: "💖 ";
+  content: "🦆 ";
 }
 
 #copyright-and-styles{
@@ -128,5 +128,5 @@ li::before{
 }
 
 #copyright::after{
-    content: "Comic copyright Alex Norris";
+    content: "Comic copyright Kate Beaton";
 }

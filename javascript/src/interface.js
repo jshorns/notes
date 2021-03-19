@@ -93,15 +93,19 @@ function updateLocalStorage(note) {
   window.localStorage.setItem('listOfNotes', JSON.stringify(array))
 }
 
+let styles = ["thisisfine", "ohno", "mfbreadcrumbs"]
+
+function randomStyle(){
+  return styles[Math.floor(Math.random() * styles.length)];
+}
 
 
 document.getElementById("stylechange").addEventListener("click", function(event){
   let currentStyle = document.querySelector("link").id
-  if (currentStyle === "thisisfine") {
-  document.querySelector("link").setAttribute("href", "styles/ohno.css");
-  document.querySelector("link").setAttribute("id", "ohno")
-  } else {
-    document.querySelector("link").setAttribute("href", "styles/thisisfine.css");
-    document.querySelector("link").setAttribute("id", "thisisfine")
-  }
+  let newStyle = randomStyle()
+  while(newStyle === currentStyle){
+    newStyle = randomStyle()
+  };
+  document.querySelector("link").setAttribute("href", `styles/${newStyle}.css`);
+  document.querySelector("link").setAttribute("id", `${newStyle}`)
 });
