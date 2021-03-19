@@ -11,11 +11,10 @@
 
   <body>
     <div id="page-body">
-    <div id="note-list">
         <div class="heading">
-        <h1>ADD A NOTE</h1>
+        <h1>NOTES</h1>
         </div>
-        <div class="display">
+        <div class="display" id="note-list">
         <span class="main">
           <span id="adding-note">
         <textarea id="note-text" cols="65" rows="10" placeholder="Type here..."></textarea>
@@ -30,31 +29,19 @@
         </span></span>
       </span>
         </div>
+        <div class="display" id="note-display">
+          <span class ="main"> <span id ="note-body"></span>
+          <span id="back-button">
+          <br>
+          <button id="delete-note">Delete Note</button><button id="hideNote">Back to Notes</button>
+          </span>
+          </span><br>
+        </div>
         <div id="copyright-and-styles">
           <span id="copyright"></span>
           <span id="change-styles"><button id="clearallnotes">Clear all notes</button> <button id="stylechange">New comic</button></span>
-        </div>
-      </div>  
-    <div id="note-display">
-      <div class="heading">
-        <h1 id="note-heading"></h1>
-        </div>
-        <div class="display">
-      <span class ="main"> <span id ="note-body"></span>
-      <span id="back-button">
-      <br>
-      <button id="delete-note">Delete Note</button><button id="hideNote">Back to Notes</button>
-      </span>
-      </span><br>
-    </div>
-    <div id="copyright-and-styles">
-      <span id="copyright"></span>
-      <span id="change-styles"><button id="clearallnotes">Clear all notes</button> <button id="stylechange">New comic</button></span>
-    </div>
+        </div> 
   </div>
-
-</div>
-</div>
 
   </body>
 

@@ -80,6 +80,8 @@ button:hover{
 
 #page-body {
   padding: 20px;
+  max-width: 984;
+  margin: auto;
 }
 
 h1{

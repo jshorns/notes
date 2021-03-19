@@ -68,17 +68,25 @@ button:hover{
   resize: none;
 }
 
+.heading{
+  width: 984;
+}
+
 .display{
   background-image: url("images/thisisfine.jpg");
   background-repeat: no-repeat;
   border: 2px solid #161511;
   padding: 20px;
   height: 486;
+  max-width: 984;
+  margin: auto;
 }
 
 
 #page-body {
   padding: 20px;
+  max-width: 984;
+  margin: auto;
 }
 
 h1{

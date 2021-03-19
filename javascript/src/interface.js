@@ -78,7 +78,6 @@ function displayNote(note) {
   let text = note.getText();
   noteList.style.display = "none";
   noteDisplay.style.display = "block";
-  document.getElementById("note-heading").textContent = "YOUR NOTE";
   noteBody.textContent = text;
 }
 
@@ -113,5 +112,6 @@ document.getElementById("stylechange").addEventListener("click", function(event)
 document.getElementById("clearallnotes").addEventListener("click", function(event){
   window.localStorage.clear();
   document.getElementById("list").innerHTML = ""
+  noteBody.textContent = "";
 })
 
