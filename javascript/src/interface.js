@@ -1,9 +1,4 @@
 
-
-// check local storage (key - array) 
-// if nothing there, create an empty array
-// if there is someting there, grab that array and populate the list by appendnoteto page
-
 let array
 if (window.localStorage.getItem('listOfNotes') !== null) {
   array = JSON.parse(window.localStorage.getItem('listOfNotes'))
@@ -83,6 +78,7 @@ function displayNote(note) {
   let text = note.getText();
   noteList.style.display = "none";
   noteDisplay.style.display = "block";
+  document.getElementById("note-heading").textContent = "YOUR NOTE";
   noteBody.textContent = text;
 }
 
