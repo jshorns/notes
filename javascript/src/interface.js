@@ -11,7 +11,7 @@ let noteDisplay = document.getElementById("note-display");
 let noteBody = document.getElementById("note-body");
 
 array.forEach( note => {
-    let newNote = new Note(note._text)
+    let newNote = new Note(note)
     appendNoteToPage(newNote)
 })
 
@@ -88,7 +88,7 @@ function hideNote() {
 }
 
 function updateLocalStorage(note) {
-  array.push(note)
+  array.push(note.getText())
   window.localStorage.setItem('listOfNotes', JSON.stringify(array))
 }
 
@@ -114,4 +114,19 @@ document.getElementById("clearallnotes").addEventListener("click", function(even
   document.getElementById("list").innerHTML = ""
   noteBody.textContent = "";
 })
+
+function removeListItemByText(text) {
+  const li = [...document.querySelectorAll("li")];
+  li.forEach(elem => {
+    if (elem.innerText == text) elem.parentNode.removeChild(elem);
+  });
+}
+document.getElementById("delete-note").addEventListener("click", function(){
+  let text = noteBody.textContent;
+  note = new Note(text)
+  array.splice(array.indexOf(text), 1);
+  window.localStorage.setItem('listOfNotes', JSON.stringify(array));
+  removeListItemByText(`${note.get20Chars()}...`)
+  hideNote();
+});
 
