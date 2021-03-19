@@ -53,6 +53,7 @@ button:hover{
 #listing-the-notes{
   display: inline-block;
   max-height: 30%;
+  height: 100%;
   overflow-y:auto; 
   width: 100%;
   background-color: rgba(249, 233, 194, 0.9);
