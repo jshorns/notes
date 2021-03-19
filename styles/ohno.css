@@ -123,9 +123,18 @@ li::before{
     display: inline-block;
 }
 
-#stylechange{
-    float: right;
+#clearallnotes{
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
 }
+
+#stylechange{
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 
 #copyright::after{
     content: "Comic copyright Alex Norris";

@@ -122,10 +122,18 @@ li::before{
 #copyright{
   display: inline-block;
 }
+#clearallnotes{
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
 #stylechange{
   float: right;
+  margin-left: 5px;
+  margin-right: 5px;
 }
+
 
 #copyright::after{
   content: "Comic copyright KC Green";

@@ -123,10 +123,18 @@ li::before{
     display: inline-block;
 }
 
-#stylechange{
+#clearallnotes{
     float: right;
-}
-
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  #stylechange{
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
 #copyright::after{
     content: "Comic copyright Kate Beaton";
 }
