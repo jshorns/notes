@@ -12,6 +12,8 @@ body {
 button{
   background-color:#cdfad9;
   border: 2px solid black;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 button:hover{
@@ -53,6 +55,7 @@ button:hover{
 #listing-the-notes{
   display: inline-block;
   max-height: 30%;
+  height: 100%;
   overflow-y:auto; 
   width: 100%;
   background-color: rgba(212, 241, 212, 0.86);
@@ -125,14 +128,10 @@ li::before{
 
 #clearallnotes{
     float: right;
-    margin-left: 5px;
-    margin-right: 5px;
   }
   
   #stylechange{
     float: right;
-    margin-left: 5px;
-    margin-right: 5px;
   }
   
 #copyright::after{
