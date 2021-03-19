@@ -92,3 +92,16 @@ function updateLocalStorage(note) {
   array.push(note)
   window.localStorage.setItem('listOfNotes', JSON.stringify(array))
 }
+
+
+
+document.getElementById("stylechange").addEventListener("click", function(event){
+  let currentStyle = document.querySelector("link").id
+  if (currentStyle === "thisisfine") {
+  document.querySelector("link").setAttribute("href", "styles/ohno.css");
+  document.querySelector("link").setAttribute("id", "ohno")
+  } else {
+    document.querySelector("link").setAttribute("href", "styles/thisisfine.css");
+    document.querySelector("link").setAttribute("id", "thisisfine")
+  }
+});
